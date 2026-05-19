@@ -23,14 +23,14 @@ function updateCart() {
 
     li.innerHTML = `
       ${food.item}
-      <span>$${food.price}</span>
+      <span>Rs ${food.price}</span>
     `;
 
     cartItems.appendChild(li);
 
   });
 
-  document.getElementById("total").innerText = total;
+  document.getElementById("total").innerText = "Rs " + total;
 
 }
 
@@ -43,7 +43,7 @@ function checkout() {
   } else {
 
     alert(
-      "Order placed successfully!\nTotal Bill: $" + total
+      "Order placed successfully!\nTotal Bill: Rs " + total
     );
 
     cart = [];
@@ -61,3 +61,20 @@ function scrollToMenu() {
     .scrollIntoView({ behavior: "smooth" });
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
